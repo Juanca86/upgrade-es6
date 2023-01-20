@@ -23,7 +23,7 @@ const cambio = users1.map((item)=> {item.name1
     }
     return item.name1
 }) 
-console.log(cambio);
+// console.log(cambio);
 
 // 4.3 Dado el siguiente array, devuelve una lista que contenga los valores 
 // de la propiedad .name y añade al valor de .name el string ' (Visitado)' 
@@ -34,3 +34,12 @@ const cities = [
 	{isVisited:true, name: 'Amsterdam'}, 
 	{isVisited:false, name: 'Seul'}
 ];
+const jarto = cities.map(mujarto);
+function mujarto(city) {
+    let jartisimo = city.name;
+    	if(city.isVisited === true) {
+    	    jartisimo += ' (Visitado)';
+    	}
+    return jartisimo;
+    }
+console.log(jarto);
